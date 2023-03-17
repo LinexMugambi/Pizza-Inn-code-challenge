@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'restaurant_pizzas/index'
+  get 'restaurant_pizzas/show'
+  get 'restaurant_pizzas/new'
+  get 'restaurant_pizzas/create'
+  get 'restaurant_pizzas/edit'
+  get 'restaurant_pizzas/update'
+  get 'restaurant_pizzas/destroy'
   get 'restaurants/index'
   get 'restaurants/show'
   get 'restaurants/new'
