@@ -1,9 +1,9 @@
-class CreatePizzaRestaurants < ActiveRecord::Migration[7.0]
+class CreateRestaurantPizzas < ActiveRecord::Migration[7.0]
   def change
-    create_table :pizza_restaurants do |t|
+    create_table :restaurant_pizzas do |t|
       t.integer :price
-      t.references :pizza, null: false, foreign_key: true
-      t.references :restaurant, null: false, foreign_key: true
+      t.belongs_to :pizza, null: false, foreign_key: true
+      t.belongs_to :restaurant, null: false, foreign_key: true
 
       t.timestamps
     end
